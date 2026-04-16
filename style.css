@@ -1,0 +1,43 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(173, 231, 212);
+}
+
+.inicio {
+    background-color: beige;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 2px;
+    margin: 0;
+}
+
+.inicio img {
+    width: 150px;
+    height: auto;
+    position: initial;
+}
+
+.inicio h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    white-space: nowrap;
+    font-family:cursive;
+    font-size: 32px;
+
+}
+
+.inicio button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  padding: 6px 12px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

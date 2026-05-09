@@ -13,11 +13,15 @@
     <div class="inicio">
     <h1>¡Agenda tus proximos viajes y lleva el control contigo!</h1>
     <img src="img/logo.png" alt="Mi Colombia" width="200">
-    <button onclick="close">Cerrar Sesion</button>
+    <button onclick="close">Volver</button>
     </div> 
     <div class="ciudades">
-        <select class="Salida" id="aeropuerto"></select>
+        <p>Selecciona el aeropuerto de Salida</p>
+        <select class="Salida" id="aeropuertos"></select>
+        <p>Selecciona el aeropuerto de llegada</p>
+        <select class="llegada" id="aeropuertol"></select>
+        <button onclick="limpiarMapa()">Limpiar</button>
     </div>
-    <div id="mapa" style="width: 50%;height:400px;position:absolute;margin: 10px;"></div> 
+    <div id="mapa" style="width: 90%;height:600px;position:absolute;margin: 10px;position:relative;left: 4%;"></div> 
 </body>
 </html>

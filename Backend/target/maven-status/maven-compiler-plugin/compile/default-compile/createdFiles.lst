@@ -1,0 +1,10 @@
+aplicacion\ItinerarioService.class
+controller\ItinerarioController.class
+dominio\puertos\IAeropuertoService.class
+aplicacion\UsuarioService.class
+dominio\modelo\Usuario.class
+controller\LoginController.class
+dominio\modelo\Aeropuerto.class
+dominio\modelo\Itinerario.class
+aplicacion\AeropuertoService.class
+aplicacion\Sesion.class

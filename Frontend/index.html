@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia de viajes Mi Colombia</title>
+    <script src="https://cdn.plot.ly/plotly-3.4.0.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="navbar">
+
+        <div class="logo-area">
+            <img src="img/logo.png" alt="Mi Colombia">
+            <h2>Viajes Mi Colombia</h2>
+        </div>
+
+        <ul class="menu">
+            <li><a href="itinerarios.html">Gestión de Itinerarios</a></li>
+        </ul>
+
+        <button onclick="cerrarSesion()">Cerrar Sesión</button>
+
+    </div>
+
+    <div class="titulo">
+        <h1>¡Agenda tus próximos viajes y lleva el control contigo!</h1>
+    </div>
+    <div class="buscador">
+
+        <div class="campo">
+            <label> Origen</label>
+            <select class="Salida" id="aeropuertos"></select>
+        </div>
+
+        <div class="campo">
+            <label> Destino</label>
+            <select class="llegada" id="aeropuertol"></select>
+        </div>
+        <div class="campo fecha-box">
+            <label>Ida</label>
+            <input type="date" id="fechaIda">
+        </div>
+        <div class="campo fecha-box">
+            <label>Vuelta</label>
+            <input type="date" id="fechaVuelta">
+        </div>
+
+        <div class="botones">
+            <button onclick="limpiarMapa()">Limpiar</button>
+            <button type="button" onclick="guardarSeleccion()">Guardar</button>
+        </div>
+
+    </div>
+    <h3 id="duracionVuelo"></h3>
+    <div id="mapa" style="width: 90%;height:600px;position:absolute;margin: 10px;position:relative;left: 4%;"></div>
+    <script src="js/main.js"></script>
+    <script>
+        function cerrarSesion() {
+            sessionStorage.clear();
+            fetch("http://localhost:8080/logout", { method: "POST" });
+            window.location.href = "login.html";
+        }
+    </script>
+</body>
+</body>
+
+</html>

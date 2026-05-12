@@ -1,0 +1,258 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(173, 231, 212);
+}
+
+
+.navbar {
+
+    background-color: beige;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 10px 30px;
+
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo-area {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.logo-area img {
+
+    width: 100px;
+}
+
+.logo-area h2 {
+
+    margin: 0;
+
+    font-family: cursive;
+
+    color: #003366;
+}
+
+.menu {
+
+    display: flex;
+
+    gap: 20px;
+
+    list-style: none;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+.menu a {
+
+    text-decoration: none;
+
+    color: #003366;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.menu a:hover {
+
+    color: #3498db;
+}
+
+
+.navbar button {
+
+    padding: 8px 15px;
+
+    background-color: #3498db;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+
+
+.titulo {
+
+    text-align: center;
+
+    margin-top: 20px;
+}
+
+.titulo h1 {
+
+    font-family: cursive;
+
+    color: #003366;
+}
+
+#duracionVuelo {
+
+    text-align: center;
+
+    margin-top: 20px;
+
+    margin-bottom: 10px;
+
+    font-family: cursive;
+
+    font-size: 24px;
+
+    color: #003366;
+}
+
+
+.inicio button {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    padding: 6px 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buscador {
+
+    width: 95%;
+    margin: 20px auto;
+
+    background: white;
+
+    display: flex;
+    align-items: center;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+
+    border: 1px solid #dcdcdc;
+}
+
+
+.campo {
+
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 12px 18px;
+
+    border-right: 1px solid #dcdcdc;
+}
+
+
+.campo label {
+
+    font-size: 13px;
+
+    color: gray;
+
+    margin-bottom: 5px;
+
+    font-weight: bold;
+}
+
+
+.campo select {
+
+    border: none;
+
+    outline: none;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    width: 100%;
+}
+
+
+.fecha-box input {
+
+    border: none;
+
+    outline: none;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    background: transparent;
+}
+
+
+.botones {
+
+    display: flex;
+
+    gap: 10px;
+
+    padding: 15px;
+
+    border-radius: 12px;
+}
+
+.botones button {
+
+    padding: 10px 15px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background-color: #3498db;
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.botones button:hover {
+
+    background-color: #217dbb;
+}
+
+#mapa {
+
+    width: 90%;
+
+    height: 600px;
+
+    margin: 20px auto;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+}
